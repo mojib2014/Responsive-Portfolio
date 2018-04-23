@@ -48,33 +48,44 @@ a:active {
 a {
     text-decoration: none;
 }
-.container {
-    width: 960px;
+/* Portfolio container, Contact container and about me container starts here */
+.clearfix {
+    /* width: 960px; */
     margin: 0 auto;
     background: white;
     height: auto;
 }
-.about-me, .contact, .title {
-    margin-top: 8px;
-    margin-left: 25px;
+.about-me, .contact, .portfolio {
+    margin: 0 auto;
+    /* margin-left: 25px; */
+    /* text-align: center; */
     font-size: 40px;
     color: #4aaaab;
     padding: 5px 8px 5px 5px;
 }
-/* .image-wrapr {
+.image-wrapper {
     width: 960px;
     background: white;
-} */
+    height: 750px;
+    margin: 0 auto;
+}
 
-  .imageHolder {
+.imageHolder {
     position: relative;
     width: 285px;
     height: 175px;
     float: right;
+    margin-bottom: 75px;
 }
+.caption {
+    margin: 0 auto;
+}
+/* .imageHolder {
+    margin: 8px;
+} */
 .imageHolder .caption {
     position: absolute;
-    width: 150  px;
+    width: 150px;
     height: 50px;
     bottom: 0px;
     left: 0px;
@@ -82,24 +93,22 @@ a {
     background: green;
 	text-align:center;
 	font-weight:bold;
-	opacity:0.7;
+    opacity:0.7;
 }
-  /* .image {
-    width:200px; 
-    height:200px; 
-    background-image: url(locationoftheimage);
-} */
-
+/* Horezental row statrts here */
 hr {
-    width: 885px;
+    width: 960px;
     padding: 5px;
     background: #4aaaab;
-    margin: 25px 25px 25px 25px ;
-    margin-bottom: 30px;
+    /* margin: 25px 25px 25px 25px ; */
+    margin: 0 auto;
 }
+/* Horizental row ends here */
+
+
 .card, .input {
     margin: 8px;
-    margin: 0 auto;
+    margin: 8px;
     text-align: center;
     width: 960px;
 }
@@ -109,7 +118,12 @@ form {
     width: 900px;
     margin: 0 auto;
 }
-
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+ }
 .footer { 
     text-align: center;
     width: 100%;
@@ -118,33 +132,32 @@ form {
     padding: 20px;
     color: black;
     margin-top: 35px;
-    position: sticky;
     border-top: 8px solid #4aaaab;
-    clearfix: both;
+    bottom: 0;
 
 }
 
 
 
- @media screen and (max-width: 900px) {
-    /* The body's bg color will be #333 */
+@media screen and (max-width: 600px) { 
+ 
     body {
       background-color: #333;
     }
-    #main-content {
-      margin-bottom: 30px;
-      background: green;
+    .image-wrapper {
+        width: 400px;
+        /* background-color: darkgray; */
+        height: 2000px;
+        
     }
-    #sidebar{
-      margin-top: 40px;
-      background: blue;
+    .imageHolder {
+        margin: 0 auto;
+        /* width: 250px; */
+        margin-bottom: 50px;
     }
-  
-    /* The wrapper's width will be 600px */
-    .wrapper {
-      width: 700px;
-      background: blue;
+    .header, .navbar {
+        width: 100%;
     }
-  }
+  } 
   
 
