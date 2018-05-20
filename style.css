@@ -2,12 +2,15 @@
     box-sizing: border-box;
 
 }
+/* Body styling */
 body {
     background: url("http://www.designtos.com/postpic/2010/05/black-texture_169245.jpg");
     width: 100%;
     font-family: arial, 'helvetica neue', helvetica, sans-serif;
 }
+/* End of body styling */
 
+/* Header styling */
 .header {
     background: #4aaaab;
     width: 100%;
@@ -17,8 +20,11 @@ body {
     line-height: 40px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 0;
+    top: 0;
 }
+/* End of header styling */
+
+/* Navbar styling */
 .navbar {
     width: 100%;
     text-align: center;
@@ -47,8 +53,9 @@ navbar, a:active {
 navbar, a {
     text-decoration: none;
 }   
+/* End of navbar styling */
 
-/* Portfolio container, Contact container and about me container starts here */
+/* Portfolio container, Contact container and about me container styling */
 .clearfix {
     margin: 0 auto;
     background: white;
@@ -69,6 +76,7 @@ navbar, a {
     margin: 0 auto;
 }
 
+/* Image holder(portfolio */
 .imageHolder {
     position: relative;
     width: 285px;
@@ -80,6 +88,7 @@ navbar, a {
     margin: 0 auto;
 }
 
+/* Image holder for portfolio */
 .imageHolder .caption {
     position: absolute;
     width: 150px;
@@ -104,36 +113,48 @@ hr {
 }
 /* Horizental row ends here */
 
-
+/* Cards styling */
 .card, .input {
     margin: 0 auto;
     text-align: center;
     width: 960px;
 }
 
+/* Card paragraph */
 .card-paragraph {
     margin: 18px;
     text-align: justify;
-
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
 }
+
+/* Index image (my image) */
 .card-image, img {
     margin: 10px;
 }
 
+
+/* Form styling */
 form {
     text-align: center;
     width: 960px;
     margin: 10px;
 }
+/* End of button */
+
+
 button {
     margin-bottom: 20px;
 }
+
 .clearfix:after {
     content: " ";
     visibility: hidden;
     display: block;
     height: 0;
  }
+
+ /* Footer styling */
 .footer { 
     text-align: center;
     width: 100%;
@@ -144,11 +165,13 @@ button {
     margin-top: 35px;
     border-top: 8px solid #4aaaab;
     bottom: 0;
+    position: sticky;
 
 }
+/* End of footer styling */
 
 
-
+/* Media query to make it mobile responsive */
 @media  (max-width: 900px) { 
  
     .header, .navbar, .footer {
